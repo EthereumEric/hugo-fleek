@@ -1,4 +1,4 @@
-baseurl = "https://simplecreditbuilding.io/"
+baseurl = "/"
 languageCode = "en-us"
 Title = "Simple Credit Building Blog"
 theme = "terminal"
