@@ -1,11 +1,11 @@
-baseurl = "/"
+baseurl = "https://simplecreditbuilding.io/"
 languageCode = "en-us"
+Title = "Simple Credit Building Blog"
 theme = "terminal"
 paginate = 5
-relativeURLs = true
+relativeUrls = true
 
 [params]
-
   # dir name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
 
@@ -14,6 +14,17 @@ relativeURLs = true
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 1
+  
+  # Show reading time in minutes for posts
+  showReadingTime = false
+
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  # toc = true
+
+  # Show full page content in RSS feed items
+  #(default is Description or Summary metadata in the front matter)
+  # rssFullText = true
 
   # show selector to switch language
   showLanguageSelector = false
@@ -22,20 +33,39 @@ relativeURLs = true
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = true
 
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
 
   # set all headings to their default size (depending on browser settings)
   # it's set to `true` by default
   # oneHeadingSize = false
 
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = "_creditbuilding"
+  site = "twitter.com/_creditbuilding"
+
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Fleek and Hugo"
-    subtitle = "Hugo Works Great with Fleek!!!"
+    title = "Build Credit"
+    subtitle = "The Right Way"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -43,19 +73,23 @@ relativeURLs = true
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Hugo and Fleek"
+      logoText = "creditbuildingschool.eth"
       logoHomeLink = "/"
-
+    # or
+    #
+    # path = "/img/cbs.jpg
+    # alt = "this is creditbuildingschool"
+ 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
         name = "Home"
         url = "/"
       [[languages.en.menu.main]]
-        identifier = "about_fleek"
-        name = "Learn About Fleek"
-        url = "https://fleek.co"
+        identifier = "about_us"
+        name = "Learn About Us"
+        url = "https://anchor.fm/creditbuildingschool"
       [[languages.en.menu.main]]
-        identifier = "about_hugo"
-        name = "Learn About Hugo"
-        url = "https://gohugo.io"
+        identifier = "Tweet Us"
+        name = "Tweet Us"
+        url = "https://twitter.com/_creditbuilding"
